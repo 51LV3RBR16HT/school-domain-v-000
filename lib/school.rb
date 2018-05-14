@@ -1,11 +1,11 @@
 # code here!
 class School
-  attr_reader :roster
+  attr_reader :name
 
-  ROSTER = []
+  NAME= []
 
-  def initialized(roster)
-    @roster = roster
+  def initialized(name)
+    @name = name
 
 
   end
