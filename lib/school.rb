@@ -1,11 +1,5 @@
 # code here!
 class School
-  attr_reader :name
-
-  def initialized(name)
-    @name = name
-
-
-  end
+  attr_accessor :name
 
 end
