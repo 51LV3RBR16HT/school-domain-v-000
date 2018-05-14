@@ -10,7 +10,7 @@ class School
 
   def add_student(name, grade)
     if roster.has_key?(grade)
-      # .has_key? returns true if given key is in a hash.
+      # .has_key? returns true if given key is in a hash {}.
       @roster[grade] << name
     else
       @roster[grade] = [name]
