@@ -7,19 +7,18 @@ class School
     @name = name
     @roster = {} # This is a hash.
   end
-
-  def roster
-    @roster
-  end
+  # 
+  # def roster
+  #   @roster
+  # end
 
   def add_student(name, grade)
-    self.roster[grade] << name
-    # if roster.has_key?(grade)
-    #   #.has_key? returns true if given key is in a hash.
-    #   @roster[grade] << name
-    # else
-    #   @roster[grade] = [name]
-    # end
+    if roster.has_key?(grade)
+      # .has_key? returns true if given key is in a hash.
+      @roster[grade] << name
+    else
+      @roster[grade] = [name]
+    end
   end
 
   def grade(grade)
