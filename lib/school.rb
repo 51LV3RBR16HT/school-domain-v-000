@@ -6,5 +6,6 @@ class School
     @roster = roster
 
   ROSTER = []
-end
+  end
+  
 end
