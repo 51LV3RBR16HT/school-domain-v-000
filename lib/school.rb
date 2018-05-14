@@ -5,7 +5,7 @@ class School
 
   def initialize(name)
     @name = name
-    @roster = {} # This is a hash.
+    @roster = {} # This is a hash. The test calls for an empty roster.
   end
 
   def roster
