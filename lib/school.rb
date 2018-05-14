@@ -25,9 +25,10 @@ class School
     @roster[grade]
   end
 
-  def sort(roster)
-    @roster =  roster
-    roster.sort!
+  def sort
+    self.roster.each do |grade, students|
+      students.sort!
+
   end
 
 end
