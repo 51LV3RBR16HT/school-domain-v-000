@@ -7,10 +7,10 @@ class School
     @name = name
     @roster = {} # This is a hash.
   end
-  # 
-  # def roster
-  #   @roster
-  # end
+
+  def roster
+    @roster
+  end
 
   def add_student(name, grade)
     if roster.has_key?(grade)
@@ -26,7 +26,8 @@ class School
   end
 
   def sort(roster)
-    @roster.sort!
+    @roster =  roster
+    roster.sort
   end
 
 end
