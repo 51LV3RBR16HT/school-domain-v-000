@@ -2,10 +2,12 @@
 class School
   attr_accessor :roster
 
+  ROSTER = []
+
   def initialized(roster)
     @roster = roster
 
-  ROSTER = []
+
   end
-  
+
 end
