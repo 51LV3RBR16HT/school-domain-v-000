@@ -8,10 +8,6 @@ class School
     @roster = {} # This is a hash. The test calls for an empty roster.
   end
 
-  # def roster
-  #   @roster
-  # end
-
   def add_student(name, grade)
     if roster.has_key?(grade)
       # .has_key? returns true if given key is in a hash.
