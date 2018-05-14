@@ -7,7 +7,7 @@ class School
 
   def initialize(roster)
     @roster = roster
-    ROSTER << roster unless ROSTER.include?(roster)
+    ROSTER << roster 
   end
 
 end
