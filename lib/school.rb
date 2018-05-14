@@ -8,6 +8,10 @@ class School
     @roster = {} # This is a hash.
   end
 
+  def roster
+    @roster
+  end
+
   def add_student(name, grade)
     self.roster[grade] << name
     # if roster.has_key?(grade)
